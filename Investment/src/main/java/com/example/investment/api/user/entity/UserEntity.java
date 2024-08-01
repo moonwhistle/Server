@@ -1,18 +1,20 @@
-package com.example.investment.user.entity;
-
-import com.example.investment.user.domain.Gender;
+package com.example.investment.api.user.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Getter
 public class UserEntity {
+
+    public UserEntity() {
+
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,10 +34,6 @@ public class UserEntity {
         this.name = name;
         this.password = password;
         this.email = email;
-    }
-
-    public UserEntity() {
-
     }
 
 }

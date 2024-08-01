@@ -1,12 +1,8 @@
-package com.example.investment.user.controller;
+package com.example.investment.api.user.controller;
 
-import com.example.investment.user.controller.dto.UserResponse;
-import com.example.investment.user.entity.UserEntity;
-import com.example.investment.user.service.UserService;
-import com.example.investment.user.service.dto.UserRequest;
+import com.example.investment.api.user.entity.UserEntity;
+import com.example.investment.api.user.service.UserService;
 
-
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
