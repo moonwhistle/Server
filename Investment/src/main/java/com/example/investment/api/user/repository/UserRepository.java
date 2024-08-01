@@ -1,8 +1,9 @@
-package com.example.investment.user.repository;
+package com.example.investment.api.user.repository;
 
 
-import com.example.investment.user.entity.UserEntity;
+import com.example.investment.api.user.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+
 import org.springframework.stereotype.Repository;
 
 @Repository

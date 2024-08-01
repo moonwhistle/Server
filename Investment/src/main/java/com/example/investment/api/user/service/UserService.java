@@ -1,7 +1,8 @@
-package com.example.investment.user.service;
+package com.example.investment.api.user.service;
 
-import com.example.investment.user.entity.UserEntity;
-import com.example.investment.user.repository.UserRepository;
+import com.example.investment.api.user.entity.UserEntity;
+import com.example.investment.api.user.repository.UserRepository;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,4 +17,5 @@ public class UserService {
     public UserEntity createUser(UserEntity userEntity){
         return userRepository.save(userEntity);
     }
+
 }

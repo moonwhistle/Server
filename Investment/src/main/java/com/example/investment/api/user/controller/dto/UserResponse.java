@@ -1,6 +1,4 @@
-package com.example.investment.user.controller.dto;
-
-import com.example.investment.user.service.dto.UserRequest;
+package com.example.investment.api.user.controller.dto;
 
 public class UserResponse {
 
