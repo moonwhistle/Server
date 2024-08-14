@@ -1,7 +1,7 @@
 package com.example.investment.api.user.controller;
 
-import com.example.investment.api.user.entity.UserEntity;
-import com.example.investment.api.user.service.UserService;
+import com.example.investment.api.user.entity.Member;
+import com.example.investment.api.user.service.MemberService;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/users")
 public class UserController {
 
-    private final UserService userService;
+    private final MemberService memberService;
 
-    public UserController(final UserService userService) {
-        this.userService = userService;
+    public UserController(final MemberService memberService) {
+        this.memberService = memberService;
     }
 
     @PostMapping("/create")
-    public UserEntity createUser(@RequestBody UserEntity userEntity){
-        return userService.createUser(userEntity);
+    public Member createUser(@RequestBody Member member){
+        return memberService.createUser(member);
     }
 }

@@ -10,9 +10,9 @@ import jakarta.persistence.GenerationType;
 
 @Entity
 @Getter
-public class UserEntity {
+public class Member {
 
-    public UserEntity() {
+    public Member() {
 
     }
 
@@ -29,7 +29,7 @@ public class UserEntity {
     @Column
     private String email;
 
-    public UserEntity(final Long id, final String name, final String password, final String email) {
+    public Member(final Long id, final String name, final String password, final String email) {
         this.id = id;
         this.name = name;
         this.password = password;
